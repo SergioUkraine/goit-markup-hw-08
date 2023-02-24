@@ -1,0 +1,16 @@
+.header{
+    border-bottom-color: $header-border-color;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    background-color: $primary-bg-color;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        margin-right: 93px;
+    }
+}

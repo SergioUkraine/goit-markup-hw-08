@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфоліо</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <nav class="navigation">
+          <a class="logo header__logo" href="index.html" lang="en"
+            ><span class="logo--accent-color">Web</span>Studio</a
+          >
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="./index.html">Студія</a>
+            </li>
+            <li class="navigation__item">
+              <a
+                class="navigation__link navigation__link--current"
+                href="./portfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contacts">
+          <li class="contacts__item">
+            <a class="contacts__link" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon" width="16px" height="12px">
+                <use href="./images/icons.svg#envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:+380961111111">
+              <svg class="contacts__icon" width="10px" height="16px">
+                <use href="./images/icons.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="portfolio">
+        <div class="container">
+          <h1 class="visually-hidden portfolio__visually-hidden">Портфоліо</h1>
+          <ul class="filter filter--margin">
+            <li class="filter__item">
+              <button class="filter__button" type="button">Усі</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__button" type="button">Веб-сайти</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__button" type="button">Додатки</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__button" type="button">Дизайн</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__button" type="button">Маркетинг</button>
+            </li>
+          </ul>
+          <ul class="cards">
+            <li class="cards__item">
+              <a class="cards__link" href="">
+                <div class="cards__thumb">
+                  <img
+                    class="cards__image"
+                    src="./images/portfolio1.jpg"
+                    alt="ноутбук з веб-сторінкою"
+                    width="370"
+                  />
+                  <p class="cards__text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="cards__description">
+                  <h2 class="cards__title">Технокряк</h2>
+                  <p class="cards__category">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards__item">
+              <a class="cards__link" href="">
+                <div class="cards__thumb">
+                  <img
+                    class="cards__image"
+                    src="./images/portfolio2.jpg"
+                    alt="два баскетболісти"
+                    width="370"
+                  />
+                  <p class="cards__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Corporis eius in totam quisquam doloremque eum sequi
+                    deserunt a vel aliquam. Impedit alias a, libero corporis
+                    tenetur laboriosam at unde sed?
+                  </p>
+                </div>
+                <div class="cards__description">
+                  <h2 class="cards__title">Постер New Orlean vs Golden Star</h2>
+                  <p class="cards__category">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards__item">
+              <a class="cards__link" href="">
+                <div class="cards__thumb">
+                  <img
+                    class="cards__image"
+                    src="./images/portfolio3.jpg"
+                    alt="назва закладу на фоні риби"
+                    width="370"
+                  />
+                  <p class="cards__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Corporis eius in totam quisquam doloremque eum sequi
+                    deserunt a vel aliquam. Impedit alias a, libero corporis
+                    tenetur laboriosam at unde sed?
+                  </p>
+                </div>
+                <div class="cards__description">
+                  <h2 class="cards__title">Ресторан Seafood</h2>
+                  <p class="cards__category">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards__item">
+              <a class="cards__link" href="">
+                <div class="cards__thumb">
+                  <img
+                    class="cards__image"
+                    src="./images/portfolio4.jpg"
+                    alt="великі чорні навушники"
+                    width="370"
+                  />
+                  <p class="cards__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Corporis eius in totam quisquam doloremque eum sequi
+                    deserunt a vel aliquam. Impedit alias a, libero corporis
+                    tenetur laboriosam at unde sed?
+                  </p>
+                </div>
+                <div class="cards__description">
+                  <h2 class="cards__title">Проєкт Prime</h2>
+                  <p class="cards__category">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards__item">
+              <a class="cards__link" href="">
+                <div class="cards__thumb">
+                  <img
+                    class="cards__image"
+                    src="./images/portfolio5.jpg"
+                    alt="дві картонні коробки"
+                    width="370"
+                  />
+                  <p class="cards__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Corporis eius in totam quisquam doloremque eum sequi
+                    deserunt a vel aliquam. Impedit alias a, libero corporis
+                    tenetur laboriosam at unde sed?
+                  </p>
+                </div>
+                <div class="cards__description">
+                  <h2 class="cards__title">Проєкт Boxes</h2>
+                  <p class="cards__category">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards__item">
+              <a class="cards__link" href="">
+                <div class="cards__thumb">
+                  <img
+                    class="cards__image"
+                    src="./images/portfolio6.jpg"
+                    alt="монітор з зображенням мапи та інтерфейсу"
+                    width="370"
+                  />
+                  <p class="cards__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Corporis eius in totam quisquam doloremque eum sequi
+                    deserunt a vel aliquam. Impedit alias a, libero corporis
+                    tenetur laboriosam at unde sed?
+                  </p>
+                </div>
+                <div class="cards__description">
+                  <h2 class="cards__title">Inspiration has no Borders</h2>
+                  <p class="cards__category">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards__item">
+              <a class="cards__link" href="">
+                <div class="cards__thumb">
+                  <img
+                    class="cards__image"
+                    src="./images/portfolio7.jpg"
+                    alt="книга з ілюстраціями"
+                    width="370"
+                  />
+                  <p class="cards__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Corporis eius in totam quisquam doloremque eum sequi
+                    deserunt a vel aliquam. Impedit alias a, libero corporis
+                    tenetur laboriosam at unde sed?
+                  </p>
+                </div>
+                <div class="cards__description">
+                  <h2 class="cards__title">Видання Limited Edition</h2>
+                  <p class="cards__category">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards__item">
+              <a class="cards__link" href="">
+                <div class="cards__thumb">
+                  <img
+                    class="cards__image"
+                    src="./images/portfolio8.jpg"
+                    alt="бірка з надписом на мотузці"
+                    width="370"
+                  />
+                  <p class="cards__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Corporis eius in totam quisquam doloremque eum sequi
+                    deserunt a vel aliquam. Impedit alias a, libero corporis
+                    tenetur laboriosam at unde sed?
+                  </p>
+                </div>
+                <div class="cards__description">
+                  <h2 class="cards__title">Проєкт LAB</h2>
+                  <p class="cards__category">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="cards__item">
+              <a class="cards__link" href="">
+                <div class="cards__thumb">
+                  <img
+                    class="cards__image"
+                    src="./images/portfolio9.jpg"
+                    alt="ноутбук з відкритою веб-сторінкою"
+                    width="370"
+                  />
+                  <p class="cards__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Corporis eius in totam quisquam doloremque eum sequi
+                    deserunt a vel aliquam. Impedit alias a, libero corporis
+                    tenetur laboriosam at unde sed?
+                  </p>
+                </div>
+                <div class="cards__description">
+                  <h2 class="cards__title">Growing Business</h2>
+                  <p class="cards__category">Додаток</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="address footer__address">
+          <a class="logo footer__logo" href="index.html">
+            <span class="logo--accent-color">Web</span>Studio</a
+          >
+
+          <address>
+            <ul class="address__list">
+              <li class="address__item">
+                <a
+                  class="address__link address__link--color"
+                  href="https://goo.gl/maps/MY8MadKQu6cBYBUQA"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+              <li class="address__item">
+                <a class="address__link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="address__item">
+                <a class="address__link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer__join">
+          <p class="footer__title">Приєднуйтесь</p>
+          <ul class="socials">
+            <li class="socials__item">
+              <a class="socials__link footer__socials" href="">
+                <svg
+                  class="socials__icon footer__socials"
+                  width="20px"
+                  height="20px"
+                >
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link footer__socials" href="">
+                <svg
+                  class="socials__icon footer__socials"
+                  width="20px"
+                  height="20px"
+                >
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link footer__socials" href="">
+                <svg
+                  class="socials__icon footer__socials"
+                  width="20px"
+                  height="20px"
+                >
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link footer__socials" href="">
+                <svg
+                  class="socials__icon footer__socials"
+                  width="20px"
+                  height="20px"
+                >
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <form class="footer__subscribe">
+          <label class="footer__title" for="subscribe-input">
+            Підпишіться на розсилку
+          </label>
+          <div class="footer__input-box">
+            <input
+              id="subscribe-input"
+              name="subscriber-email"
+              class="footer__email"
+              type="email"
+              placeholder="E-mail"
+            />
+
+            <button class="button footer__button" type="submit">
+              <span>Підписатися</span>
+              <svg class="button__icon" width="24px" height="24px">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>
