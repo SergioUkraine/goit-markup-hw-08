@@ -12,22 +12,17 @@
  @media screen and (max-width: 767px) {
     .menu{
         position: absolute;
-        min-width: 100%;
-        height: 100vh;
         top: 0px;
         left: 0px;
         overflow: hidden;
         pointer-events: none;
 }
 
-    .menu__inner{
-        position: absolute;
-        min-width: 480px;
-        height: 100vh;
+    .menu__inner{    
         padding: 48px 40px;
-        top: 0px;
-        left: 0px;
-        flex-direction: column;
+        height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
+        flex-direction: column;        
 
         pointer-events: all;
         opacity: 0;

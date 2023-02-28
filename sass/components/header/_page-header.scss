@@ -4,7 +4,7 @@
     border-bottom-style: solid;
     border-bottom-width: 1px;
     background-color: $primary-bg-color;
-
+}
 .header__container {
         position: relative;
         display: flex;
@@ -13,21 +13,22 @@
         align-items: center;
         justify-content: space-between;
     }
-}
+
 
 // Mobile
 @media screen and (max-width: 767px){
-    .header{
-        min-width: 480px;
-    }
     .header__container{
         min-height: 60px;
+    }
+    
+    .header__contacts{
+        margin-bottom: 64px;
     }
 }
 
 // Tablet
 @media screen and (min-width: 768px){
-    .header__socials.socials {
+    .social {
         display: none;
     }
 

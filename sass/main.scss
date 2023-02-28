@@ -2,11 +2,19 @@
 @import 'components/common';
 
 @import 'components/logo';
+@import 'components/social';
+@import 'components/button';
+@import 'components/social-round';
 
-@import 'components/header/page-header';
 @import 'components/header/menu';
-
 @import 'components/header/navigation';
 @import 'components/header/contacts';
 
-@import 'components/socials';
+
+@import 'components/footer/address';
+
+@import 'components/header/page-header';
+
+@import 'components/footer/page-footer';
+
+

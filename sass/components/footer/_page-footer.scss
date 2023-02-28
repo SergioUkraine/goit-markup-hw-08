@@ -1,0 +1,147 @@
+.footer{
+    min-width: 320px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $footer-hero-color;
+}
+
+.footer__inner {
+    margin-bottom: 60px;
+}
+
+.footer__logo {
+    color: $secondary-text-color;
+    margin-bottom: 28px;
+}
+
+.footer__title {
+    display: block;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $secondary-text-color;
+}
+
+.footer__subscribe {
+    text-align: center;
+}
+
+.footer__join {
+    text-align: center;
+}
+
+.footer__email {
+    display: block;
+    width: 450px;
+    height: 50px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding: 15px 16px;
+
+    color: $secondary-text-color;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    
+    background-color: $footer-hero-color;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+        
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+    
+.footer__email::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer__button {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer__button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__social-round--bgcolor {
+    background-color: $footer-links-bg-color;
+}
+
+.footer__social-round--fillcolor {
+    fill: $secondary-text-color;
+}
+
+
+@media screen and (max-width: 767px){
+    .footer__contacts {
+        margin-bottom: 60px;
+        text-align: center;  
+    }
+
+    .footer__join {
+        text-align: center;
+    }
+
+    .footer__email{
+        width:calc((100vw - 10px) - 4.17vw);
+        max-width:450px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .footer__inner{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer__container {
+        display: flex;
+        align-items: baseline;
+        overflow: hidden;
+    }
+
+    .footer__inner{
+        align-items: baseline;
+        margin: 0;
+    }
+
+    .footer__contacts {
+        margin-right: 70px;
+    }
+
+    .footer__join {
+        margin-right: 93px;
+        text-align: left;
+    }
+
+    .footer__subscribe{
+        text-align: left;
+    }
+
+    .footer__input-box {
+        display: flex;
+    }
+
+    .footer__email{
+        width: 358px;
+        margin: 0;
+        margin-right: 12px;
+    }
+
+    .footer__button{
+        margin: 0;
+    }
+}
