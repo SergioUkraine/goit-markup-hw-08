@@ -1,16 +1,44 @@
+// Common
 .header{
     border-bottom-color: $header-border-color;
     border-bottom-style: solid;
     border-bottom-width: 1px;
     background-color: $primary-bg-color;
 
-    &__container {
+.header__container {
+        position: relative;
         display: flex;
+        min-height: 80px;
+        height: 100%;
         align-items: center;
         justify-content: space-between;
     }
+}
 
-    &__logo {
+// Mobile
+@media screen and (max-width: 767px){
+    .header{
+        min-width: 480px;
+    }
+    .header__container{
+        min-height: 60px;
+    }
+}
+
+// Tablet
+@media screen and (min-width: 768px){
+    .header__socials.socials {
+        display: none;
+    }
+
+    .header__logo{
+        margin-right: 88px;
+    }
+}
+
+// Desktop
+@media screen and (min-width:1200px) {
+    .header__logo {
         margin-right: 93px;
     }
 }

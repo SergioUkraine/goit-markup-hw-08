@@ -20,59 +20,107 @@
   <body>
     <header class="header">
       <div class="container header__container">
-        <nav class="navigation">
-          <a class="logo header__logo" href="index.html" lang="en"
-            ><span class="logo--accent-color">Web</span>Studio</a
-          >
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a
-                class="navigation__link navigation__link--current"
-                href="./index.html"
-                >Студія</a
+        <a class="logo header__logo" href="index.html" lang="en"
+          ><span class="logo--accent-color">Web</span>Studio</a
+        >
+        <div class="menu js-menu-container">
+          <div class="menu__inner">
+            <nav class="navigation">
+              <ul class="navigation__list">
+                <li class="navigation__item">
+                  <a
+                    class="navigation__link navigation__link--current"
+                    href="./index.html"
+                    >Студія</a
+                  >
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="./portfolio.html"
+                    >Портфоліо</a
+                  >
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="contacts">
+              <ul class="contacts__list">
+                <li class="contacts__item contacts__item--margin">
+                  <a
+                    class="contacts__link contacts__link--accent"
+                    href="tel:+380961111111"
+                  >
+                    <svg class="contacts__icon" width="10px" height="16px">
+                      <use href="./images/icons.svg#smartphone"></use>
+                    </svg>
+                    +38 096 111 11 11</a
+                  >
+                </li>
+
+                <li class="contacts__item">
+                  <a class="contacts__link" href="mailto:info@devstudio.com">
+                    <svg class="contacts__icon" width="16px" height="12px">
+                      <use href="./images/icons.svg#envelope"></use>
+                    </svg>
+                    info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+              <ul class="header__socials socials">
+                <li class="socials__item">
+                  <a class="socials__link" href="">Instagram</a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link" href="">Twitter</a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link" href="">Facebook</a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link" href="">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+            <button class="menu__button js-close-menu">
+              <svg
+                class="menu__icon"
+                width="40px"
+                height="40px"
+                aria-label="Кнопка закриття меню"
               >
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="./portfolio.html">Портфоліо</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="">Контакти</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="contacts">
-          <li class="contacts__item">
-            <a class="contacts__link" href="mailto:info@devstudio.com">
-              <svg class="contacts__icon" width="16px" height="12px">
-                <use href="./images/icons.svg#envelope"></use>
+                <use class="" href="./images/icons.svg#icon-close_40px"></use>
               </svg>
-              info@devstudio.com</a
+            </button>
+          </div>
+
+          <button class="menu__button js-open-menu" aria-expanded="false">
+            <svg
+              class="menu__icon"
+              width="40px"
+              height="40px"
+              aria-label="Кнопка відкриття меню"
             >
-          </li>
-          <li class="contacts__item">
-            <a class="contacts__link" href="tel:+380961111111">
-              <svg class="contacts__icon" width="10px" height="16px">
-                <use href="./images/icons.svg#smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+              <use href="./images/icons.svg#icon-menu_40px"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
-    <main>
+    <!-- <main>
       <div class="overlay">
         <section class="hero">
           <div class="container">
             <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-            <button class="button hero__button" data-modal-open>Замовити послугу</button>
+            <button class="button hero__button" data-modal-open>
+              Замовити послугу
+            </button>
           </div>
         </section>
       </div>
 
       <section class="features">
         <div class="container">
-          <!--Прихований заголовок -->
           <h2 class="visually-hidden features__visually-hidden">Особливості</h2>
           <ul class="features__list">
             <li class="features__item">
@@ -398,9 +446,9 @@
           </ul>
         </div>
       </section>
-    </main>
+    </main> -->
 
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer__container">
         <div class="address footer__address">
           <a class="logo footer__logo" href="index.html">
@@ -500,9 +548,9 @@
           </div>
         </form>
       </div>
-    </footer>
+    </footer> -->
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="close-button close-button--position" data-modal-close>
           <svg class="close-button__image" width="18px" height="18px">
@@ -592,7 +640,8 @@
           <button class="button modal__button" type="submit">Відправити</button>
         </form>
       </div>
-    </div>
+    </div> -->
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -1,0 +1,97 @@
+// Common
+.menu {
+    width: 100%;
+}
+
+.menu__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+// Mobile
+ @media screen and (max-width: 767px) {
+    .menu{
+        position: absolute;
+        min-width: 100%;
+        height: 100vh;
+        top: 0px;
+        left: 0px;
+        overflow: hidden;
+        pointer-events: none;
+}
+
+    .menu__inner{
+        position: absolute;
+        min-width: 480px;
+        height: 100vh;
+        padding: 48px 40px;
+        top: 0px;
+        left: 0px;
+        flex-direction: column;
+
+        pointer-events: all;
+        opacity: 0;
+        background-color: $primary-bg-color;
+
+        transform: translateX(-100%);
+        transition-property: transform, opacity;
+        transition-duration: $animation-duration;
+        transition-timing-function: $animation-time-function;
+    }
+
+    .menu.is-open .menu__inner{
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
+
+    .menu__button{
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        top: 10px;
+        right: 15px;
+
+        pointer-events: all;
+        border: 0;
+        background-color: transparent;
+        transition-property: opacity;
+        transition-duration: $animation-duration;
+        transition-timing-function: $animation-time-function;
+    }
+
+
+    .menu__icon{
+        display: block;
+        fill: $primary-header-color;
+        transition-property: fill;
+        transition-duration: $animation-duration;
+        transition-timing-function: $animation-time-function;
+    }
+
+    .menu__button:hover .menu__icon,
+    .menu__button:focus .menu__icon
+    {
+        fill: $accent-color;
+    }
+
+    .menu.is-open .js-open-menu {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .menu .js-close-menu {
+        opacity: 0;
+    }
+
+    .menu.is-open .js-close-menu {
+        opacity: 1;
+    }
+    }
+
+// Tablet => Desktop
+@media screen and (min-width:768px){
+    .menu__button {
+        display: none;
+    }
+}
+
