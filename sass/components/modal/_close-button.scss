@@ -1,0 +1,36 @@
+.close-button {
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+}
+.close-button__image {
+    fill: black;
+
+    transition-property: fill;
+    transition-duration: $animation-duration;
+    transition-timing-function: $animation-time-function;
+}
+
+.close-button:hover .close-button__image,
+.close-button:focus .close-button__image {
+    fill: $accent-color;
+}
+
+.close-button--position{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+
+
+
