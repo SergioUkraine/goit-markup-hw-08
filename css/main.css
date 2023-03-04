@@ -1524,7 +1524,6 @@ img {
     width: 370px;
   }
   .cards__item:not(:nth-last-child(-n+3)) {
-    margin: 0;
     margin-bottom: 30px;
   }
   .cards__item:not(:nth-child(3n)) {

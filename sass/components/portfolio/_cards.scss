@@ -116,10 +116,6 @@
         width: 354px;
     }
 
-    // .cards__thumb {
-    //     width: 354px;   
-    // }
-
     .cards__item:not(:nth-child(2n)):not(:last-child) {
         margin-right: 30px;
     }
@@ -135,12 +131,7 @@
         width: 370px;
     }
 
-    // .cards__thumb{
-    //     width: 370px;
-    // }
-
     .cards__item:not(:nth-last-child(-n + 3)) {
-        margin: 0;
         margin-bottom: 30px;
     }
 
