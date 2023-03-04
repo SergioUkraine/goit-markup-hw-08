@@ -1217,9 +1217,6 @@ img {
     font-size: 36px;
     line-height: 1.17;
   }
-  .team__list {
-    display: flex;
-  }
   .team__item {
     width: 270px;
   }
@@ -1511,13 +1508,9 @@ img {
     max-width: 450px;
   }
 }
-@media screen and (min-width: 768px) {
-  .cards {
-    display: flex;
-    flex-wrap: wrap;
-  }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .cards__item {
-    max-width: 354px;
+    width: 354px;
   }
   .cards__item:not(:nth-child(2n)):not(:last-child) {
     margin-right: 30px;
@@ -1527,14 +1520,15 @@ img {
   }
 }
 @media screen and (min-width: 1200px) {
-  .cards__item:not(:nth-child(3n)) {
-    margin-right: 30px;
+  .cards__item {
+    width: 370px;
   }
   .cards__item:not(:nth-last-child(-n+3)) {
+    margin: 0;
     margin-bottom: 30px;
   }
-  .cards__item {
-    max-width: 370px;
+  .cards__item:not(:nth-child(3n)) {
+    margin-right: 30px;
   }
 }
 .portfolio {

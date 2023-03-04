@@ -3,7 +3,6 @@
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
-    
     list-style: none;
 }
 
@@ -93,13 +92,13 @@
     line-height: 1.88;
 }
 
-
 .cards__link:hover .cards__thumb::before,
 .cards__link:focus .cards__thumb::before,
 .cards__link:hover .cards__text,
 .cards__link:focus .cards__text {
     transform: translateY(0);
 }
+
 
 @media screen and (max-width:767px){
     .cards__item:not(:last-child) {
@@ -111,14 +110,15 @@
     }
 }
 
-@media screen and (min-width:768px){
-    .cards {
-        display: flex;
-        flex-wrap: wrap;
+@media screen and (min-width:768px) and (max-width:1199px){
+
+    .cards__item{
+        width: 354px;
     }
-    .cards__item {
-        max-width: 354px;   
-    }
+
+    // .cards__thumb {
+    //     width: 354px;   
+    // }
 
     .cards__item:not(:nth-child(2n)):not(:last-child) {
         margin-right: 30px;
@@ -127,19 +127,26 @@
     .cards__item:not(:last-child) {
         margin-bottom: 30px;
     }
-
 }
 
 @media screen and (min-width:1200px) {
-    .cards__item:not(:nth-child(3n)) {
-        margin-right: 30px;
+
+    .cards__item{
+        width: 370px;
     }
 
+    // .cards__thumb{
+    //     width: 370px;
+    // }
+
     .cards__item:not(:nth-last-child(-n + 3)) {
+        margin: 0;
         margin-bottom: 30px;
     }
 
-    .cards__item {
-        max-width: 370px;
+    .cards__item:not(:nth-child(3n)) {
+
+        margin-right: 30px;
     }
+
 }
