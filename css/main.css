@@ -847,7 +847,6 @@ img {
 }
 .modal {
   position: absolute;
-  width: 450px;
   padding: 40px;
   top: 50%;
   left: 50%;
@@ -969,6 +968,12 @@ img {
   fill: #2196F3;
 }
 
+@media screen and (max-width: 767px) {
+  .modal {
+    width: 100vw;
+    max-width: 450px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
