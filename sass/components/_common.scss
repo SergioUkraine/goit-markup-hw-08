@@ -9,6 +9,10 @@ body {
     background: $primary-bg-color;
 }
 
+.overflow-hidden {
+    overflow: hidden;
+}
+
 .container {
     margin: 0 auto;
     padding: 0 15px;
@@ -35,9 +39,6 @@ img {
         width: 100%;
         max-width: 480px;
         min-width: 320px;
-    }
-    .overflow-hidden {
-        overflow: hidden;
     }
 }
 
