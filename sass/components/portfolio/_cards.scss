@@ -7,8 +7,16 @@
     list-style: none;
 }
 
+.cards__item{
+    display: flex;
+    align-items: stretch;
+}
+
 .cards__link {
-    display: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     text-decoration: none;
     color: inherit;
 
@@ -61,6 +69,7 @@
 }
 
 .cards__description {
+    flex-grow: 1;
     padding: 20px 24px;
     border-left: 1px solid $portfolio-border-color;
     border-right: 1px solid $portfolio-border-color;

@@ -1407,8 +1407,15 @@ img {
   list-style: none;
 }
 
+.cards__item {
+  display: flex;
+  align-items: stretch;
+}
+
 .cards__link {
-  display: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   text-decoration: none;
   color: inherit;
   transition-property: box-shadow;
@@ -1459,6 +1466,7 @@ img {
 }
 
 .cards__description {
+  flex-grow: 1;
   padding: 20px 24px;
   border-left: 1px solid #EEEEEE;
   border-right: 1px solid #EEEEEE;
