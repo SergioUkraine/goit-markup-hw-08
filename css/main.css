@@ -208,6 +208,7 @@ img {
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
     flex-direction: column;
+    z-index: 1;
     pointer-events: all;
     opacity: 0;
     background-color: #FFFFFF;
@@ -1326,17 +1327,17 @@ img {
 }
 .filter {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   margin: 0;
   padding: 0;
-  justify-content: center;
   list-style: none;
 }
+
 .filter--margin {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
-.filter__item:not(:last-child) {
-  margin-right: 8px;
-}
+
 .filter__button {
   min-width: 73px;
   padding: 6px 20px;
@@ -1352,25 +1353,60 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.filter__button:hover, .filter__button:focus {
+
+.filter__button:hover,
+.filter__button:focus {
   background-color: #2196F3;
   color: #FFFFFF;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+@media screen and (max-width: 359px) {
+  .filter__item:not(:nth-child(2n)):not(:last-child) {
+    margin-right: 8px;
+  }
+  .filter__item:nth-last-child(n+2) {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (min-width: 360px) {
+  .filter {
+    max-width: 360px;
+  }
+  .filter__item:not(:nth-child(3n)):not(:last-child) {
+    margin-right: 8px;
+  }
+  .filter__item:nth-child(-n+3) {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .filter {
+    max-width: 100%;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  .filter--margin {
+    margin-bottom: 30px;
+  }
+  .filter__item:not(:last-child) {
+    margin: 0;
+    margin-right: 8px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter--margin {
+    margin-bottom: 50px;
+  }
+}
 .cards {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  flex-wrap: wrap;
   list-style: none;
 }
-.cards__item:not(:nth-child(3n)) {
-  margin-right: 30px;
-}
-.cards__item:not(:nth-last-child(-n+3)) {
-  margin-bottom: 30px;
-}
+
 .cards__link {
   display: inherit;
   text-decoration: none;
@@ -1379,9 +1415,12 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.cards__link:hover, .cards__link:focus {
+
+.cards__link:hover,
+.cards__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
 .cards__thumb {
   position: relative;
   overflow: hidden;
@@ -1395,10 +1434,11 @@ img {
   min-height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.cards__image {
-  display: block;
-}
+
 .cards__text {
   position: absolute;
   top: 0;
@@ -1413,18 +1453,18 @@ img {
   font-size: 18px;
   line-height: 1.56;
   transform: translateY(100%);
-}
-.cards__thumb::before, .cards__text {
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .cards__description {
   padding: 20px 24px;
   border-left: 1px solid #EEEEEE;
   border-right: 1px solid #EEEEEE;
   border-bottom: 1px solid #EEEEEE;
 }
+
 .cards__title {
   margin: 0 0 4px 0;
   padding: 0;
@@ -1434,6 +1474,7 @@ img {
   letter-spacing: 0.06em;
   color: #212121;
 }
+
 .cards__category {
   padding: 0;
   margin: 0;
@@ -1448,11 +1489,53 @@ img {
   transform: translateY(0);
 }
 
-.portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (max-width: 767px) {
+  .cards__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .cards__item {
+    max-width: 450px;
+  }
 }
+@media screen and (min-width: 768px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .cards__item {
+    max-width: 354px;
+  }
+  .cards__item:not(:nth-child(2n)):not(:last-child) {
+    margin-right: 30px;
+  }
+  .cards__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cards__item:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+  .cards__item:not(:nth-last-child(-n+3)) {
+    margin-bottom: 30px;
+  }
+  .cards__item {
+    max-width: 370px;
+  }
+}
+.portfolio {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .portfolio__visually-hidden {
   margin: 0;
   padding: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }/*# sourceMappingURL=main.css.map */

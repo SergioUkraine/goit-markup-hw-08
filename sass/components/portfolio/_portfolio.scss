@@ -1,9 +1,16 @@
 .portfolio{
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 
-    &__visually-hidden {
-        margin: 0;
-        padding: 0;
+.portfolio__visually-hidden {
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width:1200px){
+    .portfolio{
+        padding-top: 94px;
+        padding-bottom: 94px;
     }
 }

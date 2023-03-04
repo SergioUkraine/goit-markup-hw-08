@@ -24,6 +24,7 @@
         height: calc(var(--vh, 1vh) * 100);
         flex-direction: column;        
 
+        z-index: 1;
         pointer-events: all;
         opacity: 0;
         background-color: $primary-bg-color;
