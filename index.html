@@ -179,12 +179,28 @@
           <ul class="occupation__list">
             <li class="occupation__item">
               <div class="occupation__thumb">
-                <img
-                  class="occupation__image"
-                  src="./images/img1.jpg"
-                  alt="пишемо код"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/occupation/img1/img1.webp    1x,
+                      ./images/occupation/img1/img1@2x.webp 2x,
+                      ./images/occupation/img1/img1@3x.webp 3x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    class="occupation__image"
+                    srcset="
+                      ./images/occupation/img1/img1.jpg    1x,
+                      ./images/occupation/img1/img1@2x.jpg 2x,
+                      ./images/occupation/img1/img1@3x.jpg 3x
+                    "
+                    src="./images/occupation/img1/img1.jpg"
+                    alt="пишемо код"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <div class="occupation__wrapper">
                   <h3 class="occupation__subtitle">Десктопні додатки</h3>
                 </div>
@@ -192,12 +208,29 @@
             </li>
             <li class="occupation__item">
               <div class="occupation__thumb">
-                <img
-                  class="occupation__image"
-                  src="./images/img2.jpg"
-                  alt="тестємо на пристроях"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/occupation/img2/img2.webp    1x,
+                      ./images/occupation/img2/img2@2x.webp 2x,
+                      ./images/occupation/img2/img2@3x.webp 3x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    class="occupation__image"
+                    srcset="
+                      ./images/occupation/img2/img2.jpg    1x,
+                      ./images/occupation/img2/img2@2x.jpg 2x,
+                      ./images/occupation/img2/img2@3x.jpg 3x
+                    "
+                    src="./images/img2.jpg"
+                    alt="тестємо на пристроях"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
+
                 <div class="occupation__wrapper">
                   <h3 class="occupation__subtitle">Мобільні додатки</h3>
                 </div>
@@ -205,12 +238,28 @@
             </li>
             <li class="occupation__item">
               <div class="occupation__thumb">
-                <img
-                  class="occupation__image"
-                  src="./images/img3.jpg"
-                  alt="розробляємо дизайн"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/occupation/img3/img3.webp    1x,
+                      ./images/occupation/img3/img3@2x.webp 2x,
+                      ./images/occupation/img3/img3@3x.webp 3x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    class="occupation__image"
+                    srcset="
+                      ./images/occupation/img3/img3.jpg    1x,
+                      ./images/occupation/img3/img3@2x.jpg 2x,
+                      ./images/occupation/img3/img3@3x.jpg 3x
+                    "
+                    src="./images/img3.jpg"
+                    alt="розробляємо дизайн"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <div class="occupation__wrapper">
                   <h3 class="occupation__subtitle">Дизайнерські рішення</h3>
                 </div>
@@ -219,46 +268,105 @@
           </ul>
         </div>
       </section>
-      <!-- 
+
       <section class="team">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img
-                class="team__image"
-                src="./images/photo1.jpg"
-                alt="усміхнений чоловік в окулярах та з бородою"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/photo1/photo1_m.webp    1x,
+                    ./images/photo1/photo1_m@2x.webp 2x,
+                    ./images/photo1/photo1_m@3x.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/photo1/photo1_t.webp    1x,
+                    ./images/photo1/photo1_t@2x.webp 2x,
+                    ./images/photo1/photo1_t@3x.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/photo1/photo1_d.webp    1x,
+                    ./images/photo1/photo1_d@2x.webp 2x,
+                    ./images/photo1/photo1_d@3x.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="team__image"
+                  srcset="
+                    ./images/photo1/photo1_m.jpg     450w,
+                    ./images/photo1/photo1_m@2x.jpg  900w,
+                    ./images/photo1/photo1_m@3x.jpg 1350w,
+                    ./images/photo1/photo1_t.jpg     354w,
+                    ./images/photo1/photo1_t@2x.jpg  780w,
+                    ./images/photo1/photo1_t@3x.jpg 1062w,
+                    ./images/photo1/photo1_d.jpg     270w,
+                    ./images/photo1/photo1_d@2x.jpg  540w,
+                    ./images/photo1/photo1_d@3x.jpg  810w
+                  "
+                  sizes="(min-width: 1200px) 270px,
+                (min-width: 768px) 354px,
+                450px"
+                  alt="усміхнений чоловік в окулярах та з бородою"
+                  src="./images/photo1/photo1_d.jpg"
+                />
+              </picture>
+
               <div class="team__wrapper">
                 <h3 class="team__subtitle">Ігор Дем'яненко</h3>
                 <p class="team__description">Product Designer</p>
                 <ul class="social-round">
                   <li class="social-round__item">
                     <a class="social-round__link" href="">
-                      <svg class="social-round__icon" width="20px" height="20px">
+                      <svg
+                        class="social-round__icon"
+                        width="20px"
+                        height="20px"
+                      >
                         <use href="./images/icons.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-round__item">
                     <a class="social-round__link" href="">
-                      <svg class="social-round__icon" width="20px" height="20px">
+                      <svg
+                        class="social-round__icon"
+                        width="20px"
+                        height="20px"
+                      >
                         <use href="./images/icons.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-round__item">
                     <a class="social-round__link" href="">
-                      <svg class="social-round__icon" width="20px" height="20px">
+                      <svg
+                        class="social-round__icon"
+                        width="20px"
+                        height="20px"
+                      >
                         <use href="./images/icons.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-round__item">
                     <a class="social-round__link" href="">
-                      <svg class="social-round__icon" width="20px" height="20px">
+                      <svg
+                        class="social-round__icon"
+                        width="20px"
+                        height="20px"
+                      >
                         <use href="./images/icons.svg#linkedin"></use>
                       </svg>
                     </a>
@@ -267,40 +375,99 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__image"
-                src="./images/photo2.jpg"
-                alt="усміхнена дівчина в окулярах зі світлим волоссям"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/photo2/photo2_m.webp    1x,
+                    ./images/photo2/photo2_m@2x.webp 2x,
+                    ./images/photo2/photo2_m@3x.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/photo2/photo2_t.webp    1x,
+                    ./images/photo2/photo2_t@2x.webp 2x,
+                    ./images/photo2/photo2_t@3x.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/photo2/photo2_d.webp    1x,
+                    ./images/photo2/photo2_d@2x.webp 2x,
+                    ./images/photo2/photo2_d@3x.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="team__image"
+                  srcset="
+                    ./images/photo2/photo2_m.jpg     450w,
+                    ./images/photo2/photo2_m@2x.jpg  900w,
+                    ./images/photo2/photo2_m@3x.jpg 1350w,
+                    ./images/photo2/photo2_t.jpg     354w,
+                    ./images/photo2/photo2_t@2x.jpg  780w,
+                    ./images/photo2/photo2_t@3x.jpg 1062w,
+                    ./images/photo2/photo2_d.jpg     270w,
+                    ./images/photo2/photo2_d@2x.jpg  540w,
+                    ./images/photo2/photo2_d@3x.jpg  810w
+                  "
+                  sizes="(min-width: 1200px) 270px,
+                (min-width: 768px) 354px,
+                450px"
+                  alt="усміхнена дівчина в окулярах зі світлим волоссям"
+                  src="./images/photo2/photo2_d.jpg"
+                />
+              </picture>
+
               <div class="team__wrapper">
                 <h3 class="team__subtitle">Ольга Рєпіна</h3>
                 <p class="team__description">Frontend Developer</p>
                 <ul class="social-round">
                   <li class="social-round__item">
                     <a class="social-round__link" href="">
-                      <svg class="social-round__icon" width="20px" height="20px">
+                      <svg
+                        class="social-round__icon"
+                        width="20px"
+                        height="20px"
+                      >
                         <use href="./images/icons.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-round__item">
                     <a class="social-round__link" href="">
-                      <svg class="social-round__icon" width="20px" height="20px">
+                      <svg
+                        class="social-round__icon"
+                        width="20px"
+                        height="20px"
+                      >
                         <use href="./images/icons.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-round__item">
                     <a class="social-round__link" href="">
-                      <svg class="social-round__icon" width="20px" height="20px">
+                      <svg
+                        class="social-round__icon"
+                        width="20px"
+                        height="20px"
+                      >
                         <use href="./images/icons.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-round__item">
                     <a class="social-round__link" href="">
-                      <svg class="social-round__icon" width="20px" height="20px">
+                      <svg
+                        class="social-round__icon"
+                        width="20px"
+                        height="20px"
+                      >
                         <use href="./images/icons.svg#linkedin"></use>
                       </svg>
                     </a>
@@ -309,40 +476,99 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__image"
-                src="./images/photo3.jpg"
-                alt="усміхнений чоловік з поглядом у бік"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/photo3/photo3_m.webp    1x,
+                    ./images/photo3/photo3_m@2x.webp 2x,
+                    ./images/photo3/photo3_m@3x.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/photo3/photo3_t.webp    1x,
+                    ./images/photo3/photo3_t@2x.webp 2x,
+                    ./images/photo3/photo3_t@3x.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/photo3/photo3_d.webp    1x,
+                    ./images/photo3/photo3_d@2x.webp 2x,
+                    ./images/photo3/photo3_d@3x.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="team__image"
+                  srcset="
+                    ./images/photo3/photo3_m.jpg     450w,
+                    ./images/photo3/photo3_m@2x.jpg  900w,
+                    ./images/photo3/photo3_m@3x.jpg 1350w,
+                    ./images/photo3/photo3_t.jpg     354w,
+                    ./images/photo3/photo3_t@2x.jpg  780w,
+                    ./images/photo3/photo3_t@3x.jpg 1062w,
+                    ./images/photo3/photo3_d.jpg     270w,
+                    ./images/photo3/photo3_d@2x.jpg  540w,
+                    ./images/photo3/photo3_d@3x.jpg  810w
+                  "
+                  sizes="(min-width: 1200px) 270px,
+                (min-width: 768px) 354px,
+                450px"
+                  alt="усміхнений чоловік з поглядом у бік"
+                  src="./images/photo3/photo2_d.jpg"
+                />
+              </picture>
+
               <div class="team__wrapper">
                 <h3 class="team__subtitle">Микола Тарасов</h3>
                 <p class="team__description">Marketing</p>
                 <ul class="social-round">
                   <li class="social-round__item">
                     <a class="social-round__link" href="">
-                      <svg class="social-round__icon" width="20px" height="20px">
+                      <svg
+                        class="social-round__icon"
+                        width="20px"
+                        height="20px"
+                      >
                         <use href="./images/icons.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-round__item">
                     <a class="social-round__link" href="">
-                      <svg class="social-round__icon" width="20px" height="20px">
+                      <svg
+                        class="social-round__icon"
+                        width="20px"
+                        height="20px"
+                      >
                         <use href="./images/icons.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-round__item">
                     <a class="social-round__link" href="">
-                      <svg class="social-round__icon" width="20px" height="20px">
+                      <svg
+                        class="social-round__icon"
+                        width="20px"
+                        height="20px"
+                      >
                         <use href="./images/icons.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-round__item">
                     <a class="social-round__link" href="">
-                      <svg class="social-round__icon" width="20px" height="20px">
+                      <svg
+                        class="social-round__icon"
+                        width="20px"
+                        height="20px"
+                      >
                         <use href="./images/icons.svg#linkedin"></use>
                       </svg>
                     </a>
@@ -351,40 +577,99 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__image"
-                src="./images/photo4.jpg"
-                alt="усміхнений чоловік в окулярах та з бородою"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/photo4/photo4_m.webp    1x,
+                    ./images/photo4/photo4_m@2x.webp 2x,
+                    ./images/photo4/photo4_m@3x.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/photo4/photo4_t.webp    1x,
+                    ./images/photo4/photo4_t@2x.webp 2x,
+                    ./images/photo4/photo4_t@3x.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/photo4/photo4_d.webp    1x,
+                    ./images/photo4/photo4_d@2x.webp 2x,
+                    ./images/photo4/photo4_d@3x.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="team__image"
+                  srcset="
+                    ./images/photo4/photo4_m.jpg     450w,
+                    ./images/photo4/photo4_m@2x.jpg  900w,
+                    ./images/photo4/photo4_m@3x.jpg 1350w,
+                    ./images/photo4/photo4_t.jpg     354w,
+                    ./images/photo4/photo4_t@2x.jpg  780w,
+                    ./images/photo4/photo4_t@3x.jpg 1062w,
+                    ./images/photo4/photo4_d.jpg     270w,
+                    ./images/photo4/photo4_d@2x.jpg  540w,
+                    ./images/photo4/photo4_d@3x.jpg  810w
+                  "
+                  sizes="(min-width: 1200px) 270px,
+                (min-width: 768px) 354px,
+                450px"
+                  alt="усміхнений чоловік з поглядом у бік"
+                  src="./images/photo4/photo4_d.jpg"
+                />
+              </picture>
+
               <div class="team__wrapper">
                 <h3 class="team__subtitle">Михайло Єрмаков</h3>
                 <p class="team__description">UI Designer</p>
                 <ul class="social-round">
                   <li class="social-round__item">
                     <a class="social-round__link" href="">
-                      <svg class="social-round__icon" width="20px" height="20px">
+                      <svg
+                        class="social-round__icon"
+                        width="20px"
+                        height="20px"
+                      >
                         <use href="./images/icons.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-round__item">
                     <a class="social-round__link" href="">
-                      <svg class="social-round__icon" width="20px" height="20px">
+                      <svg
+                        class="social-round__icon"
+                        width="20px"
+                        height="20px"
+                      >
                         <use href="./images/icons.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-round__item">
                     <a class="social-round__link" href="">
-                      <svg class="social-round__icon" width="20px" height="20px">
+                      <svg
+                        class="social-round__icon"
+                        width="20px"
+                        height="20px"
+                      >
                         <use href="./images/icons.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-round__item">
                     <a class="social-round__link" href="">
-                      <svg class="social-round__icon" width="20px" height="20px">
+                      <svg
+                        class="social-round__icon"
+                        width="20px"
+                        height="20px"
+                      >
                         <use href="./images/icons.svg#linkedin"></use>
                       </svg>
                     </a>
@@ -444,7 +729,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <footer class="footer">
