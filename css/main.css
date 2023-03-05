@@ -106,24 +106,11 @@ img {
 }
 
 @media screen and (max-width: 480px) {
-  .social {
-    flex-wrap: wrap;
-  }
   .social__item {
-    width: 50%;
+    padding: 0 2.1vw;
   }
-  .social__item:nth-child(2n) {
-    border: none;
-    padding-right: 0;
-  }
-  .social__item:nth-child(2n) .social__link {
-    text-align: right;
-  }
-  .social__item:nth-child(2n-1) {
-    padding-left: 0;
-  }
-  .social__item:first-child {
-    margin-bottom: 1em;
+  .social__link {
+    font-size: 3.75vw;
   }
 }
 .button {
@@ -365,10 +352,10 @@ img {
 }
 @media screen and (max-width: 480px) {
   .contacts__link {
-    font-size: 20px;
+    font-size: 5vw;
   }
   .contacts__link--accent {
-    font-size: 26px;
+    font-size: 7.1vw;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1013,7 +1000,6 @@ img {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
   text-transform: uppercase;
   color: #212121;
 }
@@ -1036,6 +1022,9 @@ img {
 @media screen and (max-width: 767px) {
   .features__item:not(:last-child) {
     margin-bottom: 30px;
+  }
+  .features__title {
+    text-align: center;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1066,9 +1055,6 @@ img {
   }
   .features__item:not(:last-child) {
     margin-right: 30px;
-  }
-  .features__title {
-    text-align: left;
   }
 }
 @media screen and (max-width: 1199px) {
