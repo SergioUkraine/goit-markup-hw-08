@@ -34,6 +34,10 @@
         letter-spacing: 0.02em;
         color: $primary-header-color;
     }
+
+    .navigation__link--current {
+        color: $accent-color;
+    }
 }
 
 // Tablet

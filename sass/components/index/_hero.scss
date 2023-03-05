@@ -20,13 +20,13 @@
 }
 
 .overlay {
-    min-width: 480px;
+    min-width: 320px;
     min-height: 400px;
     margin-left: auto;
     margin-right: auto;
     background-color: $footer-hero-color;
     background-size: cover;
-
+    background-position: center;
 }
 
 @media screen and (max-width:767px){
