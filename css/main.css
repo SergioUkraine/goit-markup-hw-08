@@ -312,8 +312,6 @@ img {
     font-size: 14px;
     line-height: 1.14;
   }
-}
-@media screen and (min-width: 1200px) {
   .navigation__link--current {
     position: relative;
     color: #2196F3;
