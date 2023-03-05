@@ -104,6 +104,10 @@
         display: flex;
         justify-content: space-around;
     }
+
+    .footer__contacts{
+        text-align: center;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -120,6 +124,7 @@
 
     .footer__contacts {
         margin-right: 70px;
+        text-align: left;
     }
 
     .footer__join {
