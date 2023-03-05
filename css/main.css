@@ -690,7 +690,7 @@ img {
     line-height: 1.36;
   }
   .overlay {
-    min-width: 1600px;
+    max-width: 1600px;
     min-height: 600px;
   }
 }

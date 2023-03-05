@@ -82,7 +82,7 @@
     }
 
     .overlay {
-        min-width: 1600px;
+        max-width: 1600px;
         min-height: 600px;
     
         @media screen and (min-resolution: 1dppx) {
