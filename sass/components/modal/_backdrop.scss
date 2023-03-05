@@ -5,11 +5,11 @@
     top: 0;
     left: 0;
     background-color: $backdrop-color;
+    z-index: 1;
 
     transition-property: opacity;
     transition-duration: $animation-duration;
     transition-timing-function: $animation-time-function;
-    
 } 
 
 .backdrop.is-hidden {
