@@ -99,6 +99,13 @@
     transform: translateY(0);
 }
 
+@media screen and (max-width:480px){
+    .cards__text {
+        padding: 0 5vw;
+        font-size: 3.75vw;
+    }
+}
+
 
 @media screen and (max-width:767px){
     .cards__item:not(:last-child) {
