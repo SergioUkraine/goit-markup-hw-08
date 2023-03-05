@@ -646,7 +646,7 @@ img {
 }
 
 .overlay {
-  max-width: 480px;
+  min-width: 480px;
   min-height: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -671,7 +671,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .overlay {
-    max-width: 768px;
+    min-width: 768px;
   }
 }
 @media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1), screen and (min-width: 768px) and (min-resolution: 1dppx) {
@@ -699,7 +699,7 @@ img {
     line-height: 1.36;
   }
   .overlay {
-    max-width: 1600px;
+    min-width: 1600px;
     min-height: 600px;
   }
 }

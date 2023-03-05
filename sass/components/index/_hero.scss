@@ -20,7 +20,7 @@
 }
 
 .overlay {
-    max-width: 480px;
+    min-width: 480px;
     min-height: 400px;
     margin-left: auto;
     margin-right: auto;
@@ -51,7 +51,7 @@
        
 @media screen and (min-width: 768px){
     .overlay {
-        max-width: 768px;
+        min-width: 768px;
         @media screen and (min-resolution: 1dppx) {
             background-image: linear-gradient(to right, $hero-gradient-color, $hero-gradient-color),
                 url(../images/hero/hero_t.jpg);
@@ -82,7 +82,7 @@
     }
 
     .overlay {
-        max-width: 1600px;
+        min-width: 1600px;
         min-height: 600px;
     
         @media screen and (min-resolution: 1dppx) {
