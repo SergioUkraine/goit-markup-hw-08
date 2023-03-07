@@ -130,6 +130,13 @@
         width: 100vw;
         max-width: 450px;
     }
+
+    @media screen and (max-height: 100vw){
+        .modal {
+            top: 0;
+            transform: translateX(-50%) scale(100%);
+        }
+    }
 }
 
 @media screen and (min-width:1200px){
