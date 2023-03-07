@@ -6,6 +6,7 @@
     left: 0;
     background-color: $backdrop-color;
     z-index: 1;
+    overflow-y: scroll;
 
     transition-property: opacity;
     transition-duration: $animation-duration;
