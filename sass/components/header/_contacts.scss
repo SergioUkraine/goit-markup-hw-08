@@ -32,6 +32,21 @@
     .contacts__icon{
         display: none;
     }
+
+    @media screen and (max-height:100vw) {
+        .contacts__item--margin {
+            margin-bottom: 4vh;
+        }
+
+        .contacts__link {
+            font-size: 3vh;
+        }
+    
+        .contacts__link--accent {
+            font-size: 4.27vh;
+        }
+    }
+
 }
 
 @media screen and (max-width:480px){
