@@ -198,6 +198,7 @@ img {
     top: 0;
     left: 0;
     width: 100vw;
+    min-width: 320px;
     height: calc(var(--vh, 1vh) * 100);
     z-index: 1;
     pointer-events: all;
